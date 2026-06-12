@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FITCLUB - Stronger Every Day</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/animation.css">
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar uppercase">
+        <!-- hamberger button -->
+        <div class="menu-btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- LOGO -->
+        <div class="logo">
+          <div class="logo-img">
+            <img src="./assets/logo.png" alt="logo" height="70" />
+          </div>
+          <h2>
+            Fit<span class="orange">Club</span>
+            <div class="small">Stronger Everyday</div>
+          </h2>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="orange">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#trainers">Trainers</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#bmi">BMI calculator</a></li>
+          <li><a href="#success">success stories</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn-orange">Join Now</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <!-- Social Links -->
+        <div class="hero-social">
+          <a href="#" aria-label="Facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="YouTube"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+
+        <!-- Main content -->
+        <div class="hero-content uppercase">
+          <p class="eyebrow orange">Shape Your Body</p>
+          <h1>
+            Be Stronger<br /><span class="orange">Than Your Excuses</span>
+          </h1>
+        </div>
+        <div class="hero-desc">
+          Join the best fitness club in town and start your journey towards a
+          healthier you.
+        </div>
+
+        <!-- hero buttons -->
+        <div class="hero-btns uppercase">
+          <a href="#contact" class="btn-orange">Join Now</a>
+          <a href="#about" class="btn-ghost">Learn More</a>
+        </div>
+
+        <div class="hero-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section abt-sec" id="about">
+        <div class="container about-grid">
+          <div class="about-media">
+            <img
+              src="./assets/about.jpg"
+              alt="FitClub trainers"
+              class="about-photo"
+              width="250px"
+              height="320px"
+            />
+            <div class="about-badge uppercase">
+              <span class="about-badge-head">10+</span> <br />
+              <span class="about-badge-small">Years of <br />Experience</span>
+            </div>
+          </div>
+
+          <div class="about-body">
+            <div class="about-main">
+              <p class="uppercase about-us">About Us</p>
+              <h2 class="uppercase">
+                Build Your Body<br />Build Your
+                <span class="orange">Confidence</span>
+              </h2>
+              <p class="body-text">
+                At FitClub, we believe fitness is not just about training your
+                body, but also training your mind. Our certified trainers,
+                world-class equipment, and supportive community help you become
+                the best version of yourself.
+              </p>
+            </div>
+            <div class="feat-list">
+              <div class="feat">
+                <div class="feat-icon">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <div>
+                  <h4 class="uppercase">Modern Equipment</h4>
+                  <p>High quality machines for effective training.</p>
+                </div>
+              </div>
+              <div class="feat">
+                <div class="feat-icon">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div>
+                  <h4 class="uppercase">Expert Trainers</h4>
+                  <p>Certified and experienced trainers to guide you.</p>
+                </div>
+              </div>
+              <div class="feat">
+                <div class="feat-icon">
+                  <i class="fa-solid fa-apple-whole"></i>
+                </div>
+                <div>
+                  <h4 class="uppercase">Nutrition Plan</h4>
+                  <p>Personalized diet plans for faster results.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trainers -->
+      <section class="section trainers-sec" id="trainers">
+        <div class="container">
+          <div class="sec-head uppercase">
+            <h2>Our Trainers</h2>
+            <div class="underline"></div>
+          </div>
+
+          <!-- Trainers cards -->
+          <div class="trainers-grid">
+            <div class="t-card">
+              <div class="t-img">
+                <img src="./assets/trainer1.jpg" alt="Rahul" />
+              </div>
+              <h3>Rahul Sharma</h3>
+              <p>Strength Trainer</p>
+              <div class="t-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+
+            <div class="t-card">
+              <div class="t-img">
+                <img src="./assets/trainer3.jpg" alt="Priya" />
+              </div>
+              <h3>Priya Mehta</h3>
+              <p>Yoga Instructor</p>
+              <div class="t-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+
+            <div class="t-card">
+              <div class="t-img">
+                <img src="./assets/trainer2.jpg" alt="Amit" />
+              </div>
+              <h3>Amit Malik</h3>
+              <p>Fitness Trainer</p>
+              <div class="t-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+
+            <div class="t-card">
+              <div class="t-img">
+                <img src="./assets/trainer4.jpg" alt="Neha" />
+              </div>
+              <h3>Neha Verma</h3>
+              <p>Cardio Trainer</p>
+              <div class="t-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- plans -->
+      <section class="section plans-sec" id="plans">
+        <div class="container">
+          <div class="sec-head uppercase">
+            <h2>Membership Plans</h2>
+            <div class="underline"></div>
+          </div>
+
+          <div class="plans-grid">
+            <div class="plan-card">
+              <h3 class="uppercase">Basic</h3>
+              <div class="price">
+                <span class="plans-bold">₹499 </span>/month
+              </div>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Gym Access</li>
+                <li><i class="fa-solid fa-check"></i> Basic Training</li>
+                <li><i class="fa-solid fa-check"></i> 1 Personal Session</li>
+                <li class="space"></li>
+              </ul>
+              <a href="#contact" class="btn-ghost-dark uppercase"
+                >Choose Plan</a
+              >
+            </div>
+
+            <div class="plan-card">
+              <div class="hot-badge uppercase">Most Popular</div>
+              <h3 class="uppercase">Premium</h3>
+              <div class="price">
+                <span class="plans-bold">₹999 </span>/month
+              </div>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Gym Access</li>
+                <li><i class="fa-solid fa-check"></i> Advanced Training</li>
+                <li><i class="fa-solid fa-check"></i> 3 Personal Sessions</li>
+                <li><i class="fa-solid fa-check"></i> Diet Plan</li>
+              </ul>
+              <a href="#contact" class="btn-orange uppercase">Choose Plan</a>
+            </div>
+
+            <div class="plan-card">
+              <h3 class="uppercase">Pro</h3>
+              <div class="price">
+                <span class="plans-bold">₹1499 </span>/month
+              </div>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Gym Access</li>
+                <li><i class="fa-solid fa-check"></i> Advanced Training</li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Unlimited Personal Sessions
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Diet Plan + Supplement Plan
+                </li>
+              </ul>
+              <a href="#contact" class="btn-ghost-dark uppercase"
+                >Choose Plan</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BMI + success -->
+      <section class="section mid-sec" id="bmi">
+        <div class="container mid-grid">
+          <!-- BMI -->
+          <div class="bmi-box">
+            <div class="bmi-fields">
+              <h2 class="uppercase">BMI Calculator</h2>
+              <div class="bmi-field">
+                <label for="bmiWeight">Weight (kg)</label>
+                <input
+                  type="number"
+                  id="bmiWeight"
+                  placeholder="Enter weight"
+                  min="1"
+                />
+              </div>
+              <div class="bmi-field">
+                <label for="bmiHeight">Height (cm)</label>
+                <input
+                  type="number"
+                  id="bmiHeight"
+                  placeholder="Enetr height"
+                  min="1"
+                />
+              </div>
+              <button class="btn-orange bmi-btn uppercase" onclick="calcBMI()">
+                Calculate
+              </button>
+            </div>
+
+            <!-- BMI result -->
+            <div class="bmi-result">
+              <p class="bmi-lbl uppercase">your BMI</p>
+              <p class="bmi-val" id="bmiVal">0.0</p>
+              <p class="bmi-cat" id="bmiCat">
+                Enter your details to see result
+              </p>
+            </div>
+          </div>
+
+          <!-- sucess -->
+          <div class="success" id="success">
+            <h2 class="uppercase">Success Stories</h2>
+            <div class="slider-wrap">
+              <!-- left slider -->
+              <button class="sl-btn" onclick="slide(-1)">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+
+              <div class="sl-outer">
+                <div class="sl-track" id="slTrack">
+                  <!-- card 1 -->
+                  <div class="s-card">
+                    <div class="s-img">
+                      <img src="./assets/success1.jpg" alt="" />
+                    </div>
+                    <h4>Ravi Verma</h4>
+                    <p>Lost 18 kg in 5 months</p>
+                    <div class="stars">★★★★★</div>
+                  </div>
+                  <!-- card 2 -->
+                  <div class="s-card">
+                    <div class="s-img">
+                      <img src="./assets/success2.jpg" alt="" />
+                    </div>
+                    <h4>Ankita Verma</h4>
+                    <p>Lost 15 kg in 3 months</p>
+                    <div class="stars">★★★★★</div>
+                  </div>
+                </div>
+              </div>
+              <!-- right slider -->
+              <button class="sl-btn" onclick="slide(1)">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="section gallery-sec" id="gallery">
+        <div class="container">
+          <div class="sec-head uppercase">
+            <h2>Gallery</h2>
+          </div>
+
+          <div class="gallery-flex">
+            <div class="g-item">
+              <img src="./assets/galary1.jpg" alt="gallery" />
+            </div>
+            <div class="g-item">
+              <img src="./assets/galary2.jpg" alt="gallery" />
+            </div>
+            <div class="g-item">
+              <img src="./assets/galary3.jpg" alt="gallery" />
+            </div>
+            <div class="g-item">
+              <img src="./assets/galary3.jpg" alt="gallery" />
+            </div>
+            <div class="g-item">
+              <img src="./assets/galary4.jpg" alt="gallery" />
+            </div>
+            <div class="g-item">
+              <img src="./assets/galary5.jpg" alt="gallery" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-flex">
+        <!-- side 1 -->
+        <div class="f-brand">
+          <a href="#home" class="logo">
+            <div class="logo uppercase">
+              <div class="logo-img">
+                <img src="./assets/logo.png" alt="logo" height="70" />
+              </div>
+              <h2 class="white">
+                Fit<span class="orange">Club</span>
+                <div class="small">Stronger Everyday</div>
+              </h2>
+            </div>
+          </a>
+          <p>
+            Join FitClub today and take the first step towards a stronger,
+            healthier you.
+          </p>
+          <div class="f-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <!-- side 2 -->
+        <div class="f-links">
+          <h4 class="uppercase">Quick Links</h4>
+          <div class="f-links-cols">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#trainers">Trainers</a></li>
+              <li><a href="#plans">Plans</a></li>
+              <li><a href="#bmi">BMI Calculator</a></li>
+            </ul>
+            <ul>
+              <li><a href="#success">Success Stories</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- side 3 -->
+        <div class="f-contact" id="contact">
+          <h4 class="uppercase">Contact Us</h4>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> 123 Fitness Street, Gym
+            City, India – 110001
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+          <p><i class="fa-solid fa-envelope"></i> info@fitclub.com</p>
+        </div>
+        <!-- side 4 -->
+        <div class="f-newsletter">
+          <h4 class="uppercase">Newsletter</h4>
+          <p>Subscribe to get updates and offers.</p>
+          <div class="nl-form">
+            <input
+              type="email"
+              id="nlEmail"
+              required
+              placeholder="Enter your email"
+            />
+            <button class="btn-orange" onclick="subscribe()">Subscribe</button>
+          </div>
+          <p class="nl-msg" id="nlMsg"></p>
+        </div>
+      </div>
+      <!-- footer bar -->
+      <div class="footer-bar">
+        <p>&copy; 2024 FitClub. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="./js/sript.js"></script>
+  </body>
+</html>
