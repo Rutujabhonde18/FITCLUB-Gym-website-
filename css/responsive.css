@@ -1,0 +1,348 @@
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .section {
+    margin: 50px 40px;
+  }
+
+  .footer-flex {
+    gap: 50px;
+  }
+
+  .hero-desc {
+    width: 40%;
+  }
+
+  .trainers-grid {
+    flex-wrap: wrap;
+  }
+
+  .t-card {
+    width: 40%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links li a {
+    font-size: 12px;
+  }
+
+  .hero {
+    padding-left: 40px;
+    font-size: 2rem;
+  }
+
+  .hero-social {
+    left: 20px;
+  }
+
+  .hero-content,
+  .hero-btns,
+  .hero-desc {
+    margin-left: 50px;
+  }
+
+  .hero-desc {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-photo {
+    left: 0;
+    width: 50%;
+    height: 400px;
+  }
+
+  .about-main {
+    right: 0;
+  }
+
+  .body-text {
+    width: 100%;
+  }
+
+  .feat-list {
+    position: static;
+    justify-content: center;
+  }
+
+  .trainers-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .t-card {
+    width: 45%;
+  }
+
+  .plans-grid {
+    flex-wrap: wrap;
+  }
+
+  .plan-card {
+    width: 45%;
+  }
+
+  .mid-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-flex {
+    flex-wrap: wrap;
+  }
+
+  .g-item {
+    width: 48%;
+  }
+
+  .footer-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .section {
+    margin: 40px 20px;
+  }
+
+  .navbar {
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+  }
+
+  .menu-btn {
+    display: block;
+    order: -1;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .hero-social {
+    position: relative;
+    left: 2%;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero-content,
+  .hero-btns,
+  .hero-desc {
+    margin-left: 0;
+  }
+
+  .hero-desc {
+    width: 100%;
+    margin: 30px auto;
+    font-size: 14px;
+  }
+
+  .hero-btns {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .about-photo {
+    width: 100%;
+    object-fit: contain;
+    box-shadow: none;
+  }
+
+  .about-badge {
+    left: 0;
+    bottom: -20px;
+  }
+
+  .feat {
+    width: 100%;
+  }
+
+  .trainers-grid {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .t-card {
+    width: 90%;
+  }
+
+  .plans-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan-card {
+    width: 80%;
+    max-width: 350px;
+  }
+
+  .plan-card:nth-child(2) {
+    transform: none;
+  }
+
+  .bmi-box,
+  .score-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .slider-wrap {
+    flex-direction: column;
+  }
+
+  .sl-btn {
+    display: none;
+  }
+
+  .sl-outer {
+    max-width: 100%;
+  }
+
+  .s-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .s-img {
+    width: 100%;
+  }
+
+  .gallery-flex {
+    flex-direction: column;
+  }
+
+  .g-item {
+    width: 100%;
+  }
+
+  .footer {
+    padding-top: 20px;
+  }
+
+  .footer-flex {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .f-social {
+    justify-content: center;
+  }
+
+  .f-brand > a {
+    display: none;
+  }
+
+  .f-links-cols {
+    justify-content: center;
+    text-align: start;
+  }
+
+  .footer h4::after {
+    margin: 8px auto;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .navbar .btn-orange {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-desc {
+    font-size: 13px;
+  }
+
+  #nlEmail {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .btn-orange,
+  .btn-ghost {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .btn-ghost-dark {
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 0.7rem;
+  }
+
+  .logo h2 {
+    font-size: 32px;
+  }
+
+  .footer-flex {
+    width: 95%;
+  }
+
+  .footer-bar p {
+    font-size: 12px;
+  }
+}
