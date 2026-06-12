@@ -298,11 +298,15 @@
   .footer h4::after {
     margin: 8px auto;
   }
+
+  .nl-form .btn-orange {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
-
   .navbar .btn-orange {
     display: none;
   }
